@@ -9,3 +9,36 @@ curl -X 'PUT' \
   "price_with_tax": 0,
   "tax": 0
 }'
+
+
+###
+curl -X 'PUT' \
+  'http://localhost:8000/user/11/item/11' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "item": {
+    "name": "string",
+    "description": "string",
+    "price": 0,
+    "price_with_tax": 0,
+    "tax": 0
+  },
+  "user": {
+    "username": "string",
+    "full_name": "string"
+  }
+}'
+
+###
+curl -X 'PUT' \
+  'http://localhost:8000/list_items/122' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": [1,2,3]
+}'
