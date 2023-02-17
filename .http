@@ -1,0 +1,11 @@
+curl -X 'PUT' \
+  'http://localhost:8000/items/123' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "price_with_tax": 0,
+  "tax": 0
+}'
